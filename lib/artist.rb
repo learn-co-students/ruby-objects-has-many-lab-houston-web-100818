@@ -13,13 +13,13 @@ class Artist
     end
 
     def add_song_by_name(song_name)
-        song = Song.new(song_name) #creating a new song with the arg
+        song = Song.new(song_name)  #creating a new song with the arg
         @songs << song
-        song.artist = self         #associating the song and the artist
+        song.artist = self          #associating the song and the artist
     end
 
     def self.song_count
-        Song.all.length
+        Song.all.length  #ret total num of songs associated to all existing artists
     end
 
 
